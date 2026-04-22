@@ -9,9 +9,17 @@
 ## Что сделано
 
 1. Настроены сервисы `jupyter/pyspark-notebook` и `clickhouse/clickhouse-server`
-1. Реализован Spark job `raw_to_star.py`
-2. Реализован Spark job `star_to_clickhouse_reports.py`
+2. Реализован Spark job `raw_to_star.py`
+3. Реализован Spark job `star_to_clickhouse_reports.py`
 	- формирование 6 витрин: `report_products`, `report_customers`, `report_time`, `report_stores`, `report_suppliers`, `report_quality`
+
+## Вид звезды
+
+![star](sql/erd/pgsql_erd.png)
+
+## Вид отчетов в clickhouse
+
+![houseflip](sql/erd/clickhouse.png)
 
 ## Запуск
 
