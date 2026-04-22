@@ -4,12 +4,13 @@
 
 ## Цель работы
 
-Реализовать ETL-пайплайн на Spark с загрузкой данных из staging в модель звезда PostgreSQL и построением 6 обязательных витрин в ClickHouse.
+Необходимо реализовать ETL-пайплайн с помощью Spark, который трансформирует данные из источника (файлы mock_data.csv с номерами) в модель данных звезда в PostgreSQL, а затем на основе модели данных звезда создать ряд отчетов по данным в одной из NoSQL базах данных обязательно и в нескольких других опционально (будет бонусом). Каждый отчет представляет собой отдельную таблицу в NoSQL БД.
 
 ## Что сделано
 
-1. Реализован Spark job `raw_to_star.py`:
-2. Реализован Spark job `star_to_clickhouse_reports.py`:
+1. Настроены сервисы `jupyter/pyspark-notebook` и `clickhouse/clickhouse-server`
+1. Реализован Spark job `raw_to_star.py`
+2. Реализован Spark job `star_to_clickhouse_reports.py`
 	- формирование 6 витрин: `report_products`, `report_customers`, `report_time`, `report_stores`, `report_suppliers`, `report_quality`
 
 ## Запуск
