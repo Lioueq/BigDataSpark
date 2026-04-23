@@ -13,11 +13,11 @@
 3. Реализован Spark job `star_to_clickhouse_reports.py`
 	- формирование 6 витрин: `report_products`, `report_customers`, `report_time`, `report_stores`, `report_suppliers`, `report_quality`
 
-## Вид звезды
+## Схема звезды
 
 ![star](sql/erd/pgsql_erd.png)
 
-## Вид отчетов в clickhouse
+## Схема отчетов в clickhouse
 
 ![houseflip](sql/erd/clickhouse.png)
 
